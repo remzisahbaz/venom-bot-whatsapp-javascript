@@ -370,7 +370,7 @@ async function sendVideoLinkToNumbers(client,senderMessage,videoLink) {
                                               \n ${videoLink} 
                                               \n Allah ibadetlerimizi kabul eylesin.
                                               
-                                              \nİrtibat Destek: *Sakarya/Emre OCAK* 0531 573 55 57`);
+                                              \nİrtibat Destek: ************* 05*****`);
 
 // Resmi belirtilen alıcıya gönder
 sendImageToRecipient(client,`${message.gsm}@c.us`, './bayram.jpg');
@@ -386,7 +386,6 @@ sendImageToRecipient(client,`${message.gsm}@c.us`, './bayram.jpg');
 async function sendImageToRecipient(client,recipient, imagePath) {
   try {
     // Resmi gönder
-    await client.sendImage(recipient, imagePath,'kurban.jpg', 'Bayramınız mübarek olsun');
     await client.sendImage(recipient, imagePath,'kurban.jpg', 'Bayramınız mübarek olsun');
     console.log('Resim gönderildi');
   } catch (error) {
